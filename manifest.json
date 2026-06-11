@@ -1,0 +1,19 @@
+{
+  "name": "dpc card generator",
+  "id": "dpc-card-generator",
+  "api": "1.0.0",
+  "main": "code.js",
+  "capabilities": [],
+  "enableProposedApi": false,
+  "documentAccess": "dynamic-page",
+  "editorType": [
+    "figma"
+  ],
+  "ui": "ui.html",
+  "networkAccess": {
+    "allowedDomains": [
+      "https://itunes.apple.com",
+      "https://*.mzstatic.com"
+    ]
+  }
+}
