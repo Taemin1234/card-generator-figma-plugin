@@ -153,6 +153,7 @@ async function createCardsFromTemplate(
     card.y = template.y;
 
     const coverNode = findChildByName(card, 'cover_image');
+    const bgNode = findChildByName(card, 'bg_image');
     const typeNode = findChildByName(card, 'kind_tag');
     const titleNode = findChildByName(card, 'track_title');
     const artistNode = findChildByName(card, 'artist_name');
@@ -161,6 +162,7 @@ async function createCardsFromTemplate(
     const genreNode = findChildByName(card, 'genre_tag');
 
     await setImageFill(coverNode, cardData.coverUrl);
+    await setImageFill(bgNode, cardData.coverUrl);
     await setText(typeNode, formatKind(cardData.kind));
     await setText(titleNode, cardData.title);
     await setText(artistNode, cardData.artist);
